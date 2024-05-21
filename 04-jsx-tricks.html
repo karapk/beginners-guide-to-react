@@ -6,9 +6,10 @@
   <script type="text/babel">
     const rootElement = document.getElementById('root')
     const children = 'Hello World'
-    const className = 'container'
-    const props = {children, className}
-    const element = <div {...props} />
+    const myClassName = 'container'
+    const props = {children, myClassName}
+    //...props. This part is a way to spread (or pass along) all the properties that are given to this component. It’s like saying, "Take everything else that was passed to this component and include it here."
+    const element = <div id="app-root"  {...props} myClassName="not-container" />
     ReactDOM.render(element, rootElement)
   </script>
 </body>
