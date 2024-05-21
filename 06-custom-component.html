@@ -7,11 +7,13 @@
     function Message({children}) {
       return <div className="message">{children}</div>
     }
-
+    //Message is a custom component. You have to start the custom function with a capital letter so react knows what function to call. 
     const element = (
       <div className="container">
+      
         <Message>Hello World</Message>
         <Message>Goodbye World</Message>
+        <Message>Hi World</Message>
       </div>
     )
 
